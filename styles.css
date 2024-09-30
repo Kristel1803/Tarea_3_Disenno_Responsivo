@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #b1d2e4;
+}
+
+.header-left {
+    flex: 1; 
+    background-color: #a1c7dc;
+    padding: 20px;
+}
+
+.header-left img {
+    width: 50%;
+    height: auto; 
+}
+
+.header-right {
+    flex: 1; 
+    background-color: #91c1da;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+.nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav #container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+.nav .last {
+    margin-right: 0;
+}
+
+/* Content Area */
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    background-color: #e0f7fa;
+    padding: 10px;
+}
+
+.aside {
+    background-color: #81d4fa;
+    padding: 20px;
+}
+
+aside img {
+    width: 100%; 
+    height: auto; /* Mantiene la proporción */
+}
+
+.main {
+    display: grid;
+    gap: 10px;
+}
+
+main article {
+    background-color: #4fc3f7;
+    padding: 20px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap; 
+}
+
+.image-gallery img.Ima {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.img {
+    background-color: #9ae6f0;
+    padding: 20px;
+    width: calc(25% - 40px); /* Ajuste para un diseño de cuatro columnas */
+    text-align: center;
+    margin: 10px; 
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #424242;
+    color: white;
+}
+
+.footer-item {
+    flex: 1; 
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .content-area {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .header {
+        flex-direction: column; /* Header en columna */
+    }
+
+    .header-left, .header-right {
+        width: 100%; /* Ajuste para que ocupen el ancho completo */
+    }
+
+    .img {
+        width: calc(50% - 40px); /* Dos columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .img {
+        width: 100%; /* Una sola columna en pantallas muy pequeñas */
+    }
+
+    .nav #container {
+        flex-direction: column; /* Navegación en columna */
+    }
+}

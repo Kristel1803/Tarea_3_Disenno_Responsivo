@@ -1,0 +1,142 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Diseño Web Responsivo: conceptos, viewport, media queries y su impacto en la experiencia del usuario.">
+    <meta name="keywords" content="diseño web responsivo, viewport, media queries, experiencia de usuario">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web Responsivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <img src="Image/header-left.jpg" alt="">
+            </div>
+            <div class="header-right">
+                <h1>Diseño Web Responsivo</h1>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div id="container">
+                <a class="principal" href="index.html">Inicio</a>
+                <a class="principal" href="#">Diseño Web Responsivo</a>
+                <a class="principal" href="#">Viewport</a>
+                <a class="principal" href="#">Media Queries</a>
+                <a class="principal" href="#">Ejemplos Prácticos de Media Queries</a>
+                <a class="principal last" href="#">Contáctenos</a>
+            </div>
+        </nav>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <aside class="aside">
+                <h3>Autor</h3>
+                <img src="Image/ImagenAutor.jpeg" alt="">
+            <p><strong>Kristel Mena</strong> <a href="#">Más información...</a></p>
+            </aside>
+            <main class="main">
+                <article>
+                    <h2>Concepto de Diseño Web Responsivo</h2>
+                    <p>El diseño web responsivo es un enfoque de desarrollo que permite que los sitios y aplicaciones se adapten automáticamente al tamaño, orientación y capacidades de diversos dispositivos, desde teléfonos móviles hasta computadoras de escritorio, para ofrecer la mejor experiencia al usuario sin necesidad de crear versiones específicas.</p>
+                    <h3>La importancia del diseño web responsivo en la actualidad</h3>
+                    <p>Es esencial debido a la diversidad de dispositivos, especialmente smartphones, para acceder a internet. Mejora la experiencia de usuario, branding y SEO, asegurando mayor accesibilidad, optimización para motores de búsqueda, ahorro de recursos y adaptación a tendencias móviles. Esto lo convierte en clave para la eficiencia y competitividad de los sitios web.</p>
+                    <h3>Su impacto en la experiencia del usuario</h3>
+                    <p>Los usuarios acceden al contenido de forma cómoda y rápida, disfrutando de una navegación intuitiva y una mejor legibilidad. Esto garantiza una experiencia de usuario fluida y consistente, sin importar el dispositivo que utilicen, ya sea una computadora, tableta o teléfono inteligente. Un sitio optimizado mejora la usabilidad, reduce la frustración y fomenta mayor lealtad a la marca, aumentando las conversiones e interacción.</p>
+                </article>
+                <article>
+                    <h2>Viewport</h2>
+                    <p>Es el área visible de una página web en un dispositivo, y es un concepto fundamental en el diseño web responsivo. Se refiere al espacio en la pantalla donde se muestra el contenido de una página.</p>
+                    <h3>Funcionamiento del Viewport</h3>
+                    <p>Es fundamental en la visualización de sitios web en diferentes dispositivos, ya que define el área visible de una página en la pantalla del usuario. Su papel incluye:</p>
+                    <ul>
+                        <li><strong>Adaptación del contenido</strong><p>Permite que los sitios se ajusten al tamaño de la pantalla, garantizando que el contenido se muestre de manera óptima sin necesidad de desplazamiento horizontal.</p></li>
+                        <li><strong>Experiencia del usuario</strong><p>Controla el tamaño y la escala del contenido, lo que contribuye a una navegación más fluida, mejorando la interacción y satisfacción del usuario.</p></li>
+                        <li><strong>SEO y rendimiento</strong><p>Un uso correcto del viewport mejora el posicionamiento en motores de búsqueda, lo que es crucial para atraer tráfico.</p></li>
+                    </ul>
+                    <h3>Configuración del Viewport</h3>
+                    <p>La configuración se realiza mediante la etiqueta <code>&lt;meta name="viewport"&gt;</code> en la sección <code>&lt;head&gt;</code> del HTML, con atributos clave como:</p>
+                    <ul>
+                        <li>width: Define el ancho del viewport, pudiendo ser un valor fijo o "device-width".</li>
+                        <img src="Image/ImagenWidth.png" alt="ImagenWidth"> 
+                        <li>initial-scale: Establece el nivel de zoom inicial al cargar la página.</li>
+                        <img src="Image/ImagenInitial-scale.png" alt="ImagenInitial-scale"> <br>
+                        <li>maximum-scale y minimum-scale: Controlan los niveles máximos y mínimos de zoom permitidos.</li>
+                        <img src="Image/ImagenMaximum-scaleMinimum-scale.png" alt="ImagenMaximum-scaleMinimum-scale">
+                        <li>user-scalable: Indica si el usuario puede hacer zoom, aunque generalmente se recomienda permitirlo.</li>
+                        <img src="Image/ImagenUser-scalable.png" alt="ImagenUser-scalable">
+                    </ul>
+                    <h3>Uso del Viewport en Diferentes Dispositivos</h3>
+                    <ul>
+                        <li>Dispositivos móviles: Un viewport bien configurado permite que el contenido se ajuste automáticamente al tamaño de la pantalla, mejorando legibilidad y usabilidad.</li>
+                        <li>Escritorios: En pantallas más grandes, el viewport ayuda a utilizar el espacio de manera efectiva, presentando un diseño más amplio y detallado.</li>
+                    </ul>
+                </article>
+        
+                <article>
+                    <h2>Media Queries</h2>
+                    <p>Las CSS3 Media Queries son una herramienta esencial para el diseño web responsivo, permitiendo aplicar estilos específicos a diferentes dispositivos y tamaños de pantalla. A continuación, se profundiza en su uso y se analizan ejemplos prácticos.</p>
+                    <h3>Uso de Media Queries</h3>
+                    <ol>
+                        <li>Adaptación a diferentes dispositivos: Las media queries permiten que un sitio web se ajuste a diversas resoluciones y características de los dispositivos, como ancho, altura, orientación y resolución. Esto es fundamental en un mundo donde los usuarios acceden a internet a través de una variedad de dispositivos, desde smartphones hasta pantallas de escritorio.</li>
+                        <li>Sintaxis básica: La sintaxis de una media query es sencilla. Se utiliza la regla @media, seguida de condiciones que especifican cuándo se aplican los estilos. Aquí hay un ejemplo básico:</li>
+                        <img src="Image/ImagenSintaxisBásica.png" alt="ImagenSintaxisBásic">
+                        <p>En este caso, el fondo del cuerpo cambiará a azul claro cuando el ancho de la pantalla sea de 600 píxeles o menos.</p>
+                        <li>Condiciones comunes: Algunas de las condiciones más utilizadas en media queries incluyen:</li>
+                        <ul>
+                            <li>min-width: Define estilos para pantallas que tienen un ancho mínimo.</li>
+                            <li>max-width: Aplica estilos para pantallas con un ancho máximo.</li>
+                            <li>orientation: Especifica estilos según la orientación de la pantalla (horizontal o vertical).</li>
+                            <li>resolution: Aplica estilos según la densidad de píxeles.</li>
+                        </ul>
+                    </ol>
+                </article>
+                    <article>
+                        <h2>Ejemplos Prácticos de Media Queries</h2>
+                        <ol>
+                            <li>Estilos para dispositivos móviles: A continuación, un ejemplo que cambia el diseño de una tarjeta en función del ancho de la pantalla:</li>
+                            <img src="Image/ImagenDispositivosMóviles.png" alt="ImagenDispositivosMóviles" class="Ima">
+                            <p>En este ejemplo, la tarjeta ocupa el 100% del ancho en pantallas pequeñas, 50% en pantallas medianas y 30% en pantallas grandes.</p>
+                            <li>Cambio de diseño basado en la orientación: Se pueden utilizar media queries para adaptar el diseño según la orientación del dispositivo:</li>
+                            <img src="Image/ImagenBasadoOrientación.png" alt="ImagenBasadoOrientación" class="Ima">
+                            <P>Aquí, el tamaño de fuente se ajusta dependiendo de si el dispositivo está en orientación horizontal o vertical.</P>
+                            <li>Uso de características avanzadas: Además de los anchos, las media queries pueden incluir características más avanzadas:</li>
+                            <img src="Image/ImagenCaracterísticasAvanzadas.png" alt="ImagenCaracterísticasAvanzadas" class="Ima">
+                            <p>Este ejemplo ajusta el esquema de color del sitio según la preferencia del usuario por un modo oscuro.</p>
+                        </ol>
+                    </article>
+            </main>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-gallery">
+            <div class="img">
+                <p>Estilos para dispositivos móviles</p>
+                <img src="Image/ImagenDispositivosMóviles.png" alt="ImagenDispositivosMóviles" class="Ima">
+                <p>En este ejemplo, la tarjeta ocupa el 100% del ancho en pantallas pequeñas, 50% en pantallas medianas y 30% en pantallas grandes.</p>
+            </div>
+            <div class="img">
+                <p>Cambio de diseño basado en la orientación</p>
+                <img src="Image/ImagenBasadoOrientación.png" alt="ImagenBasadoOrientación" class="Ima">
+                <P>Aquí, el tamaño de fuente se ajusta dependiendo de si el dispositivo está en orientación horizontal o vertical.</P>
+            </div>
+            <div class="img">
+                <p>Uso de características avanzadas</p>
+                <img src="Image/ImagenCaracterísticasAvanzadas.png" alt="ImagenCaracterísticasAvanzadas" class="Ima">
+                <p>Este ejemplo ajusta el esquema de color del sitio según la preferencia del usuario por un modo oscuro.</p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-item">Derechos Reservados Kristel Mena</div>
+            <div class="footer-item">Sep 28, 2024</div>
+        </footer>
+    </div>
+</body>
+</html>
